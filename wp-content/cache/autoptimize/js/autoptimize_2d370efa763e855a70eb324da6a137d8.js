@@ -5,7 +5,7 @@ window._wpemojiSettings = {
   svgExt: ".svg",
   source: {
     concatemoji:
-      "/wp-includes/js/wp-emoji-release.min.js?ver=6.6.1",
+      "https://undangandigital.id/wp-includes/js/wp-emoji-release.min.js?ver=6.6.1",
   },
 };
 /*! This file is auto-generated */
@@ -3097,14 +3097,14 @@ if (
   document.body.classList.add("is-IE");
 }
 var eae = {
-  ajaxurl: "/wp-admin/admin-ajax.php",
+  ajaxurl: "https://undangandigital.id/wp-admin/admin-ajax.php",
   current_url:
     "aHR0cHM6Ly91bmRhbmdhbmRpZ2l0YWwuaWQvYnVyZ3VuZHktYmxpc3MvTmFtYStUYW11Lw==",
   breakpoints: { xs: 0, sm: 480, md: 768, lg: 1025, xl: 1440, xxl: 1600 },
 };
 var eae_editor = {
   plugin_url:
-    "/wp-content/plugins/addon-elements-for-elementor-page-builder/",
+    "https://undangandigital.id/wp-content/plugins/addon-elements-for-elementor-page-builder/",
 };
 jQuery(window).on("elementor/frontend/init", function () {
   elementorFrontend.hooks.addAction(
@@ -5246,7 +5246,7 @@ var isEditMode = !1,
   });
 })(jQuery);
 var WDP_WP = {
-  ajaxurl: "/wp-admin/admin-ajax.php",
+  ajaxurl: "https://undangandigital.id/wp-admin/admin-ajax.php",
   wdpNonce: "80e88a7ff4",
   jpages: "true",
   jPagesNum: "10",
@@ -19726,7 +19726,7 @@ var elementorFrontendConfig = {
     "form-submissions": true,
   },
   urls: {
-    assets: "/wp-content/plugins/elementor/assets/",
+    assets: "https://undangandigital.id/wp-content/plugins/elementor/assets/",
   },
   settings: { page: [], editorPreferences: [] },
   kit: {
@@ -22682,8 +22682,8 @@ var elementorFrontendConfig = {
   },
 ]);
 var cevar = {
-  ajax_url: "/wp-admin/admin-ajax.php",
-  plugin_url: "/wp-content/plugins/weddingpress/",
+  ajax_url: "https://undangandigital.id/wp-admin/admin-ajax.php",
+  plugin_url: "https://undangandigital.id/wp-content/plugins/weddingpress/",
 };
 /*!
  * Countdown v0.1.0
