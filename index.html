@@ -2,13 +2,30 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0;url=/burgundy-bliss/" />
-    <script>
-      window.location.href =
-        "/burgundy-bliss/" + window.location.pathname.split("/").pop();
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Pernikahan</title>
   </head>
   <body>
-    Redirecting...
+    <div class="nama-tamu">Tamu Undangan yang Terhormat</div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var currentURL = window.location.pathname;
+        var guestName = currentURL.split("/").pop();
+
+        if (guestName && guestName !== "") {
+          guestName = decodeURIComponent(guestName.replace(/\+/g, " "));
+          guestName = guestName
+            .split(" ")
+            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(" ");
+
+          var namaTamuElement = document.querySelector(".nama-tamu");
+          if (namaTamuElement) {
+            namaTamuElement.textContent = guestName;
+          }
+        }
+      });
+    </script>
   </body>
 </html>
