@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      var pathSegments = window.location.pathname.split("/");
+      var guestName = pathSegments[pathSegments.length - 1];
+      if (guestName) {
+        sessionStorage.setItem("guestName", guestName);
+      }
+      window.location.href = "/";
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
