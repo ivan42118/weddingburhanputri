@@ -3389,30 +3389,30 @@
     ></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Get the current URL
-        var currentURL = window.location.href;
+        // Dapatkan URL saat ini
+        var currentURL = window.location.pathname;
 
-        // Extract the guest name from the URL
-        var guestNameMatch = currentURL.match(
-          /\/burgundy-bliss\/(.+)\/index\.html/
+        // Ekstrak nama tamu dari URL
+        var matches = currentURL.match(
+          /\/burgundy-bliss\/(.+?)(?:\/index\.html)?$/
         );
 
-        if (guestNameMatch && guestNameMatch[1]) {
-          var guestName = guestNameMatch[1];
+        if (matches && matches[1]) {
+          var guestName = matches[1];
 
-          // Replace '+' with space and decode the URL-encoded name
+          // Decode nama tamu dan ganti '+' dengan spasi
           guestName = decodeURIComponent(guestName.replace(/\+/g, " "));
 
-          // Capitalize the first letter of each word
+          // Kapitalisasi huruf pertama setiap kata
           guestName = guestName
             .split(" ")
             .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
             .join(" ");
 
-          // Find the element with class 'nama-tamu'
+          // Temukan elemen dengan kelas 'nama-tamu'
           var namaTamuElement = document.querySelector(".nama-tamu");
 
-          // Update the text content if the element exists
+          // Perbarui konten teks jika elemen ditemukan
           if (namaTamuElement) {
             namaTamuElement.textContent = guestName;
           }
