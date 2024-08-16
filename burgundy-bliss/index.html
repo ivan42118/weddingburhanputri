@@ -3392,7 +3392,10 @@
         var currentURL = window.location.pathname;
         var guestName = currentURL.split("/").pop();
 
-        if (guestName && guestName !== "burgundy-bliss") {
+        if (
+          guestName &&
+          guestName !== "weddingburhanputri.github.io/burgundy-bliss"
+        ) {
           guestName = decodeURIComponent(guestName.replace(/\+/g, " "));
           guestName = guestName
             .split(" ")
