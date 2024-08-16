@@ -25,10 +25,7 @@
       rel="stylesheet"
     />
     <title>Burhan & Putri</title>
-    <meta
-      name="description"
-      content="Undangan Pernikahan Burhan dan Putri"
-    />
+    <meta name="description" content="Undangan Pernikahan Burhan dan Putri" />
     <meta
       name="robots"
       content="noindex, nofollow, noodp, noarchive, nosnippet"
@@ -38,17 +35,14 @@
       property="og:url"
       content="https://undangandigital.id/burgundy-bliss/Nama Tamu/"
     />
-    <meta property="og:site_name" content="Undangan Pernikahan Burhan dan Putri" />
+    <meta
+      property="og:site_name"
+      content="Undangan Pernikahan Burhan dan Putri"
+    />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta
-      property="article:author"
-      content="#"
-    />
-    <meta
-      property="article:publisher"
-      content="#"
-    />
+    <meta property="article:author" content="#" />
+    <meta property="article:publisher" content="#" />
     <meta property="article:section" content="Template" />
     <meta property="og:title" content="Burgundy Bliss" />
     <meta
@@ -521,7 +515,9 @@
                           data-widget_type="ud-namtamu.default"
                         >
                           <div class="elementor-widget-container">
-                            <div class="nama-tamu">Tamu Undangan yang Terhormat</div>
+                            <div class="nama-tamu">
+                              Tamu Undangan yang Terhormat
+                            </div>
                           </div>
                         </div>
                         <div
@@ -1115,8 +1111,8 @@
                             <div
                               class="elementor-heading-title elementor-size-default"
                             >
-                              Putri dari Bapak Musonip, S.Pd.<br />dan
-                              Ibu Maria Ratnaningsih
+                              Putri dari Bapak Musonip, S.Pd.<br />dan Ibu Maria
+                              Ratnaningsih
                             </div>
                           </div>
                         </div>
@@ -1251,8 +1247,7 @@
                             <span
                               class="elementor-heading-title elementor-size-default"
                               >Putra dari Bapak Agus Mamat<br />dan Ibu Iis
-                            </span
-                            >
+                            </span>
                           </div>
                         </div>
                         <div
@@ -1516,7 +1511,8 @@
                             <h2
                               class="elementor-heading-title elementor-size-default"
                             >
-                              Jl. Teratai C6 No. 5 RT.05/RW.09,<br />Perum GPP, Desa Pamengkang<br/>
+                              Jl. Teratai C6 No. 5 RT.05/RW.09,<br />Perum GPP,
+                              Desa Pamengkang<br />
                               Kec. Mundu, Kab. Cirebon.
                             </h2>
                           </div>
@@ -1677,8 +1673,9 @@
                             <h2
                               class="elementor-heading-title elementor-size-default"
                             >
-                            Jl. Teratai C6 No. 5 RT.05/RW.09,<br />Perum GPP, Desa Pamengkang<br/>
-                            Kec. Mundu, Kab. Cirebon.
+                              Jl. Teratai C6 No. 5 RT.05/RW.09,<br />Perum GPP,
+                              Desa Pamengkang<br />
+                              Kec. Mundu, Kab. Cirebon.
                             </h2>
                           </div>
                         </div>
@@ -3038,7 +3035,7 @@
                           data-widget_type="image.default"
                         >
                           <div class="elementor-widget-container">
-                            <h5 style="color: white;">MIVNS & Pandut</h5>
+                            <h5 style="color: white">MIVNS & Pandut</h5>
                           </div>
                         </div>
                         <div
@@ -3390,6 +3387,32 @@
       defer
       src="https://undangandigital.id/wp-content/cache/autoptimize/js/autoptimize_2d370efa763e855a70eb324da6a137d8.js"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the current URL
+        var currentURL = window.location.href;
+
+        // Extract the guest name from the URL
+        var guestName = currentURL.split("/").pop();
+
+        // Decode the URL-encoded name (in case of spaces or special characters)
+        guestName = decodeURIComponent(guestName);
+
+        // Capitalize the first letter of each word
+        guestName = guestName
+          .split(" ")
+          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(" ");
+
+        // Find the element with class 'nama-tamu'
+        var namaTamuElement = document.querySelector(".nama-tamu");
+
+        // Update the text content if the element exists
+        if (namaTamuElement) {
+          namaTamuElement.textContent = guestName;
+        }
+      });
+    </script>
   </body>
 </html>
 <!-- Dynamic page generated in 0.479 seconds. -->
