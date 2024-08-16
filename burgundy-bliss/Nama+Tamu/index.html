@@ -25,10 +25,7 @@
       rel="stylesheet"
     />
     <title>Burhan & Putri</title>
-    <meta
-      name="description"
-      content="Undangan Pernikahan Burhan dan Putri"
-    />
+    <meta name="description" content="Undangan Pernikahan Burhan dan Putri" />
     <meta
       name="robots"
       content="noindex, nofollow, noodp, noarchive, nosnippet"
@@ -38,17 +35,14 @@
       property="og:url"
       content="https://undangandigital.id/burgundy-bliss/Nama Tamu/"
     />
-    <meta property="og:site_name" content="Undangan Pernikahan Burhan dan Putri" />
+    <meta
+      property="og:site_name"
+      content="Undangan Pernikahan Burhan dan Putri"
+    />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta
-      property="article:author"
-      content="#"
-    />
-    <meta
-      property="article:publisher"
-      content="#"
-    />
+    <meta property="article:author" content="#" />
+    <meta property="article:publisher" content="#" />
     <meta property="article:section" content="Template" />
     <meta property="og:title" content="Burgundy Bliss" />
     <meta
@@ -7279,9 +7273,15 @@ body.rtl .elementor-112438 .elementor-element.elementor-element-1f604c28 .elemen
                           data-widget_type="ud-namtamu.default"
                         >
                           <div class="elementor-widget-container">
+<<<<<<< HEAD
                             <div class="nama-tamu">Tamu Undangan yang Terhormat</div>
                             <audio id="song" loop=""> 
                               <source src="https://undangandigital.id/wp-content/uploads/2022/06/Stephen_Sanchez_Until_I_Found_You.mp3" type="audio/mp3"> </audio>
+=======
+                            <div class="nama-tamu">
+                              Tamu Undangan yang Terhormat
+                            </div>
+>>>>>>> 11359db12e21a3ce60ebcfba23150a3a97535a4f
                           </div>
                         </div>
                         <div
@@ -7875,8 +7875,8 @@ body.rtl .elementor-112438 .elementor-element.elementor-element-1f604c28 .elemen
                             <div
                               class="elementor-heading-title elementor-size-default"
                             >
-                              Putri dari Bapak Musonip, S.Pd.<br />dan
-                              Ibu Maria Ratnaningsih
+                              Putri dari Bapak Musonip, S.Pd.<br />dan Ibu Maria
+                              Ratnaningsih
                             </div>
                           </div>
                         </div>
@@ -8011,8 +8011,7 @@ body.rtl .elementor-112438 .elementor-element.elementor-element-1f604c28 .elemen
                             <span
                               class="elementor-heading-title elementor-size-default"
                               >Putra dari Bapak Agus Mamat<br />dan Ibu Iis
-                            </span
-                            >
+                            </span>
                           </div>
                         </div>
                         <div
@@ -8276,7 +8275,8 @@ body.rtl .elementor-112438 .elementor-element.elementor-element-1f604c28 .elemen
                             <h2
                               class="elementor-heading-title elementor-size-default"
                             >
-                              Jl. Teratai C6 No. 5 RT.05/RW.09,<br />Perum GPP, Desa Pamengkang<br/>
+                              Jl. Teratai C6 No. 5 RT.05/RW.09,<br />Perum GPP,
+                              Desa Pamengkang<br />
                               Kec. Mundu, Kab. Cirebon.
                             </h2>
                           </div>
@@ -8437,8 +8437,9 @@ body.rtl .elementor-112438 .elementor-element.elementor-element-1f604c28 .elemen
                             <h2
                               class="elementor-heading-title elementor-size-default"
                             >
-                            Jl. Teratai C6 No. 5 RT.05/RW.09,<br />Perum GPP, Desa Pamengkang<br/>
-                            Kec. Mundu, Kab. Cirebon.
+                              Jl. Teratai C6 No. 5 RT.05/RW.09,<br />Perum GPP,
+                              Desa Pamengkang<br />
+                              Kec. Mundu, Kab. Cirebon.
                             </h2>
                           </div>
                         </div>
@@ -9819,7 +9820,7 @@ body.rtl .elementor-112438 .elementor-element.elementor-element-1f604c28 .elemen
                           data-widget_type="image.default"
                         >
                           <div class="elementor-widget-container">
-                            <h5 style="color: white;">MIVNS & Pandut</h5>
+                            <h5 style="color: white">MIVNS & Pandut</h5>
                           </div>
                         </div>
                         <div
@@ -10171,6 +10172,25 @@ body.rtl .elementor-112438 .elementor-element.elementor-element-1f604c28 .elemen
       defer
       src="/wp-content/cache/autoptimize/js/autoptimize_2d370efa763e855a70eb324da6a137d8.js"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var urlParams = new URLSearchParams(window.location.search);
+        var guestName = urlParams.get("name");
+
+        if (guestName) {
+          guestName = decodeURIComponent(guestName.replace(/\+/g, " "));
+          guestName = guestName
+            .split(" ")
+            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(" ");
+
+          var namaTamuElement = document.querySelector(".nama-tamu");
+          if (namaTamuElement) {
+            namaTamuElement.textContent = guestName;
+          }
+        }
+      });
+    </script>
   </body>
 </html>
 <!-- Dynamic page generated in 0.479 seconds. -->
