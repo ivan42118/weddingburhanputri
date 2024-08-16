@@ -3393,23 +3393,29 @@
         var currentURL = window.location.href;
 
         // Extract the guest name from the URL
-        var guestName = currentURL.split("/").pop();
+        var guestNameMatch = currentURL.match(
+          /\/burgundy-bliss\/(.+)\/index\.html/
+        );
 
-        // Decode the URL-encoded name (in case of spaces or special characters)
-        guestName = decodeURIComponent(guestName);
+        if (guestNameMatch && guestNameMatch[1]) {
+          var guestName = guestNameMatch[1];
 
-        // Capitalize the first letter of each word
-        guestName = guestName
-          .split(" ")
-          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-          .join(" ");
+          // Replace '+' with space and decode the URL-encoded name
+          guestName = decodeURIComponent(guestName.replace(/\+/g, " "));
 
-        // Find the element with class 'nama-tamu'
-        var namaTamuElement = document.querySelector(".nama-tamu");
+          // Capitalize the first letter of each word
+          guestName = guestName
+            .split(" ")
+            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(" ");
 
-        // Update the text content if the element exists
-        if (namaTamuElement) {
-          namaTamuElement.textContent = guestName;
+          // Find the element with class 'nama-tamu'
+          var namaTamuElement = document.querySelector(".nama-tamu");
+
+          // Update the text content if the element exists
+          if (namaTamuElement) {
+            namaTamuElement.textContent = guestName;
+          }
         }
       });
     </script>
