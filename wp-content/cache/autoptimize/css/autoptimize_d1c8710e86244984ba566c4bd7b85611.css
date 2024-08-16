@@ -1,11 +1,11 @@
 @font-face {
   font-family: wdpfont;
-  src: url(//undangandigital.id/wp-content/plugins/weddingpress/addons/comment-kit/css/fonts/wdpfont.eot?i08r8g);
-  src: url(//undangandigital.id/wp-content/plugins/weddingpress/addons/comment-kit/css/fonts/wdpfont.eot?i08r8g#iefix)
+  src: url(/wp-content/plugins/weddingpress/addons/comment-kit/css/fonts/wdpfont.eot?i08r8g);
+  src: url(/wp-content/plugins/weddingpress/addons/comment-kit/css/fonts/wdpfont.eot?i08r8g#iefix)
       format("embedded-opentype"),
-    url(//undangandigital.id/wp-content/plugins/weddingpress/addons/comment-kit/css/fonts/wdpfont.ttf?i08r8g)
+    url(/wp-content/plugins/weddingpress/addons/comment-kit/css/fonts/wdpfont.ttf?i08r8g)
       format("truetype"),
-    url(//undangandigital.id/wp-content/plugins/weddingpress/addons/comment-kit/css/fonts/wdpfont.woff?i08r8g)
+    url(/wp-content/plugins/weddingpress/addons/comment-kit/css/fonts/wdpfont.woff?i08r8g)
       format("woff"),
     url(//undangandigital.id/wp-content/plugins/weddingpress/addons/comment-kit/css/fonts/wdpfont.svg?i08r8g#wdpfont)
       format("svg");
