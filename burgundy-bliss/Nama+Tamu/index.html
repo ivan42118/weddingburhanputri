@@ -3389,20 +3389,26 @@
     ></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        // Dapatkan URL saat ini
         var currentURL = window.location.pathname;
-        var guestName = currentURL.split("/").pop();
 
-        if (
-          guestName &&
-          guestName !== "weddingburhanputri.github.io/burgundy-bliss"
-        ) {
+        // Ekstrak nama tamu dari URL
+        var guestName = currentURL.split("/")[2]; // Mengasumsikan struktur URL /burgundy-bliss/[nama-tamu]/
+
+        if (guestName) {
+          // Decode nama tamu dan ganti '+' dengan spasi
           guestName = decodeURIComponent(guestName.replace(/\+/g, " "));
+
+          // Kapitalisasi huruf pertama setiap kata
           guestName = guestName
             .split(" ")
             .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
             .join(" ");
 
+          // Temukan elemen dengan kelas 'nama-tamu'
           var namaTamuElement = document.querySelector(".nama-tamu");
+
+          // Perbarui konten teks jika elemen ditemukan
           if (namaTamuElement) {
             namaTamuElement.textContent = guestName;
           }
